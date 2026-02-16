@@ -277,6 +277,43 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+
+.trip-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.2rem 0 1rem;
+}
+
+.trip-filter {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  padding: 0.52rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.trip-filter.is-active {
+  background: var(--gold);
+  color: #111;
+  border-color: transparent;
+}
+
+.trip-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-card .trip-book {
+  margin-top: auto;
+}
+
+.trip-card.is-hidden {
+  display: none;
+}
+
 .tile {
   padding: 1rem;
 }

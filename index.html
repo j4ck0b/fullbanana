@@ -25,6 +25,7 @@
         <a href="#" class="brand">Banana Trails Elite</a>
         <nav>
           <a href="#oferta">Oferta</a>
+          <a href="#banana-trips">Wycieczki</a>
           <a href="#experiences">Doświadczenia</a>
           <a href="#opinie">Opinie</a>
           <a href="#kontakt">Rezerwacja</a>
@@ -47,7 +48,7 @@
               <a class="btn btn-ghost" href="#oferta">Poznaj pakiety</a>
             </div>
             <div class="urgency" id="urgencyCounter">
-              <strong>Zostało 5 miejsc</strong> na najbliższy termin „Gold Escape”.
+              <strong>Zostało 5 miejsc</strong> na najbliższy termin „South Escape”.
             </div>
           </div>
 
@@ -69,23 +70,72 @@
           <p class="section-sub">Wybierz poziom ekskluzywności, który najlepiej pasuje do Twojego stylu.</p>
 
           <div class="package-tabs" role="tablist" aria-label="Pakiety wycieczek">
-            <button class="tab is-active" data-package="gold" role="tab" aria-selected="true">Gold Escape</button>
-            <button class="tab" data-package="black" role="tab" aria-selected="false">Black Signature</button>
-            <button class="tab" data-package="white" role="tab" aria-selected="false">White Horizon</button>
+            <button class="tab is-active" data-package="gold" role="tab" aria-selected="true">South Escape</button>
+            <button class="tab" data-package="black" role="tab" aria-selected="false">Teide Signature</button>
+            <button class="tab" data-package="white" role="tab" aria-selected="false">VIP Yacht</button>
           </div>
 
           <article class="package-card" id="packageCard">
             <p class="badge" id="packageBadge">Najczęściej wybierany</p>
-            <h3 id="packageTitle">Gold Escape — 7 dni</h3>
+            <h3 id="packageTitle">South Escape — 7 dni</h3>
             <p id="packageText">
-              Idealny balans między relaksem i prestiżem: prywatny transfer, wyselekcjonowany hotel,
-              2 kolacje degustacyjne i concierge dostępny przez cały pobyt.
+              Teneryfa w wersji klasy premium: prywatny transfer, resort 5★ na południu wyspy i concierge dostępny przez cały pobyt.
             </p>
             <div class="package-footer">
-              <p class="price" id="packagePrice">od 12 900 zł / os.</p>
+              <p class="price" id="packagePrice">od 10 900 zł / os.</p>
               <a href="#kontakt" class="btn btn-primary">Rezerwuję ten pakiet</a>
             </div>
           </article>
+        </div>
+      </section>
+
+
+
+      <section id="banana-trips" class="section reveal">
+        <div class="container">
+          <h2>Wycieczki premium wyłącznie na Teneryfie</h2>
+          <p class="section-sub">Każdy pakiet realizujemy tylko na Teneryfie: luksusowe hotele, prywatne transfery i programy dopasowane do stylu podróżowania.</p>
+
+          <div class="trip-filters" role="tablist" aria-label="Filtr stref Teneryfy">
+            <button class="trip-filter is-active" data-region="all">Wszystkie</button>
+            <button class="trip-filter" data-region="south">Południe</button>
+            <button class="trip-filter" data-region="north">Północ</button>
+            <button class="trip-filter" data-region="vip">VIP</button>
+          </div>
+
+          <div class="cards three trips-grid" id="tripsGrid">
+            <article class="tile trip-card lift" data-region="south">
+              <h3>Teneryfa South Escape</h3>
+              <p>Costa Adeje i Playa del Duque: resort 5★, prywatny transfer i kolacje z widokiem na ocean.</p>
+              <button class="btn btn-ghost trip-book" data-trip="Teneryfa South Escape">Rezerwuję ten kierunek</button>
+            </article>
+            <article class="tile trip-card lift" data-region="vip">
+              <h3>Teneryfa VIP Yacht & Sunset</h3>
+              <p>Rejs katamaranem, premium beach club i concierge, który układa plan dnia pod Ciebie.</p>
+              <button class="btn btn-ghost trip-book" data-trip="Teneryfa VIP Yacht & Sunset">Rezerwuję ten kierunek</button>
+            </article>
+            <article class="tile trip-card lift" data-region="north">
+              <h3>Teneryfa North Nature</h3>
+              <p>La Orotava, Puerto de la Cruz i klify północy: aktywnie, kameralnie i bardzo komfortowo.</p>
+              <button class="btn btn-ghost trip-book" data-trip="Teneryfa North Nature">Rezerwuję ten kierunek</button>
+            </article>
+            <article class="tile trip-card lift" data-region="south">
+              <h3>Teneryfa Teide Prestige</h3>
+              <p>Prywatny wyjazd pod Teide, sesja foto o zachodzie i kolacja degustacyjna po powrocie.</p>
+              <button class="btn btn-ghost trip-book" data-trip="Teneryfa Teide Prestige">Rezerwuję ten kierunek</button>
+            </article>
+            <article class="tile trip-card lift" data-region="vip">
+              <h3>Teneryfa Honeymoon Gold</h3>
+              <p>Pakiet dla par: apartament z widokiem, strefa spa i romantyczny cruise tylko we dwoje.</p>
+              <button class="btn btn-ghost trip-book" data-trip="Teneryfa Honeymoon Gold">Rezerwuję ten kierunek</button>
+            </article>
+            <article class="tile trip-card lift" data-region="north">
+              <h3>Teneryfa Remote Luxury</h3>
+              <p>Workation premium: szybkie Wi‑Fi, spokojna strefa północy i popołudniowe aktywności nad oceanem.</p>
+              <button class="btn btn-ghost trip-book" data-trip="Teneryfa Remote Luxury">Rezerwuję ten kierunek</button>
+            </article>
+          </div>
+</div>
         </div>
       </section>
 
@@ -115,7 +165,7 @@
             <h2>Opinie klientów premium</h2>
             <blockquote class="quote-box" id="quoteBox">
               „To nie był wyjazd, to było doświadczenie luksusu. Każdy detal dopracowany perfekcyjnie.”
-              <cite>— Karolina, Black Signature</cite>
+              <cite>— Karolina, Teide Signature</cite>
             </blockquote>
             <div class="quote-controls">
               <button class="btn btn-ghost quote-btn" data-quote="0">1</button>
@@ -153,9 +203,9 @@
             <label>
               Interesujący pakiet
               <select name="package" id="packageInput" required>
-                <option value="Gold Escape">Gold Escape</option>
-                <option value="Black Signature">Black Signature</option>
-                <option value="White Horizon">White Horizon</option>
+                <option value="South Escape">South Escape</option>
+                <option value="Teide Signature">Teide Signature</option>
+                <option value="VIP Yacht">VIP Yacht</option>
               </select>
             </label>
             <label>
