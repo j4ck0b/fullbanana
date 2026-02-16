@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banana Trails Elite — Luksusowe wycieczki</title>
+    <meta
+      name="description"
+      content="Ekskluzywne wycieczki premium: złote standardy obsługi, prywatni concierge, butikowe hotele i niezapomniane trasy szyte na miarę."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-layer bg-layer-1" aria-hidden="true"></div>
+    <div class="bg-layer bg-layer-2" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="#" class="brand">Banana Trails Elite</a>
+        <nav>
+          <a href="#oferta">Oferta</a>
+          <a href="#banana-trips">Wycieczki</a>
+          <a href="#experiences">Doświadczenia</a>
+          <a href="#opinie">Opinie</a>
+          <a href="#kontakt">Rezerwacja</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero reveal">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Luksusowe podróże premium</p>
+            <h1>Wyjątkowe wycieczki dla osób, które oczekują więcej</h1>
+            <p class="lead">
+              Czarny dress code jakości, złoty standard obsługi i biała karta na Twoje marzenia.
+              Projektujemy podróże, które robią wrażenie od pierwszego kliknięcia po ostatni toast.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#kontakt">Zarezerwuj konsultację</a>
+              <a class="btn btn-ghost" href="#oferta">Poznaj pakiety</a>
+            </div>
+            <div class="urgency" id="urgencyCounter">
+              <strong>Zostało 5 miejsc</strong> na najbliższy termin „South Escape”.
+            </div>
+          </div>
+
+          <aside class="hero-card floating">
+            <h2>VIP Concierge 24/7</h2>
+            <ul>
+              <li>Prywatne transfery i priority check-in.</li>
+              <li>Selekcja hoteli 5★ i butikowych resortów.</li>
+              <li>Rezerwacje restauracji i doświadczeń niedostępnych publicznie.</li>
+            </ul>
+            <p class="card-note">Każdy wyjazd obejmuje osobistego opiekuna podróży.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="oferta" class="section reveal">
+        <div class="container">
+          <h2>Pakiety premium</h2>
+          <p class="section-sub">Wybierz poziom ekskluzywności, który najlepiej pasuje do Twojego stylu.</p>
+
+          <div class="package-tabs" role="tablist" aria-label="Pakiety wycieczek">
+            <button class="tab is-active" data-package="gold" role="tab" aria-selected="true">South Escape</button>
+            <button class="tab" data-package="black" role="tab" aria-selected="false">Teide Signature</button>
+            <button class="tab" data-package="white" role="tab" aria-selected="false">VIP Yacht</button>
+          </div>
+
+          <article class="package-card" id="packageCard">
+            <p class="badge" id="packageBadge">Najczęściej wybierany</p>
+            <h3 id="packageTitle">South Escape — 7 dni</h3>
+            <p id="packageText">
+              Teneryfa w wersji klasy premium: prywatny transfer, resort 5★ na południu wyspy i concierge dostępny przez cały pobyt.
+            </p>
+            <div class="package-footer">
+              <p class="price" id="packagePrice">od 10 900 zł / os.</p>
+              <a href="#kontakt" class="btn btn-primary">Rezerwuję ten pakiet</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+
+      <section id="banana-trips" class="section reveal">
+        <div class="container">
+          <h2>Wycieczki premium wyłącznie na Teneryfie</h2>
+          <p class="section-sub">Każdy pakiet realizujemy tylko na Teneryfie: luksusowe hotele, prywatne transfery i programy dopasowane do stylu podróżowania.</p>
+
+          <div class="trip-filters" role="tablist" aria-label="Filtr stref Teneryfy">
+            <button class="trip-filter is-active" data-region="all">Wszystkie</button>
+            <button class="trip-filter" data-region="south">Południe</button>
+            <button class="trip-filter" data-region="north">Północ</button>
+            <button class="trip-filter" data-region="vip">VIP</button>
+          </div>
+
+          <div class="cards three trips-grid" id="tripsGrid">
+            <article class="tile trip-card lift" data-region="south">
+              <h3>Teneryfa South Escape</h3>
+              <p>Costa Adeje i Playa del Duque: resort 5★, prywatny transfer i kolacje z widokiem na ocean.</p>
+              <button class="btn btn-ghost trip-book" data-trip="Teneryfa South Escape">Rezerwuję ten kierunek</button>
+            </article>
+            <article class="tile trip-card lift" data-region="vip">
+              <h3>Teneryfa VIP Yacht & Sunset</h3>
+              <p>Rejs katamaranem, premium beach club i concierge, który układa plan dnia pod Ciebie.</p>
+              <button class="btn btn-ghost trip-book" data-trip="Teneryfa VIP Yacht & Sunset">Rezerwuję ten kierunek</button>
+            </article>
+            <article class="tile trip-card lift" data-region="north">
+              <h3>Teneryfa North Nature</h3>
+              <p>La Orotava, Puerto de la Cruz i klify północy: aktywnie, kameralnie i bardzo komfortowo.</p>
+              <button class="btn btn-ghost trip-book" data-trip="Teneryfa North Nature">Rezerwuję ten kierunek</button>
+            </article>
+            <article class="tile trip-card lift" data-region="south">
+              <h3>Teneryfa Teide Prestige</h3>
+              <p>Prywatny wyjazd pod Teide, sesja foto o zachodzie i kolacja degustacyjna po powrocie.</p>
+              <button class="btn btn-ghost trip-book" data-trip="Teneryfa Teide Prestige">Rezerwuję ten kierunek</button>
+            </article>
+            <article class="tile trip-card lift" data-region="vip">
+              <h3>Teneryfa Honeymoon Gold</h3>
+              <p>Pakiet dla par: apartament z widokiem, strefa spa i romantyczny cruise tylko we dwoje.</p>
+              <button class="btn btn-ghost trip-book" data-trip="Teneryfa Honeymoon Gold">Rezerwuję ten kierunek</button>
+            </article>
+            <article class="tile trip-card lift" data-region="north">
+              <h3>Teneryfa Remote Luxury</h3>
+              <p>Workation premium: szybkie Wi‑Fi, spokojna strefa północy i popołudniowe aktywności nad oceanem.</p>
+              <button class="btn btn-ghost trip-book" data-trip="Teneryfa Remote Luxury">Rezerwuję ten kierunek</button>
+            </article>
+          </div>
+</div>
+        </div>
+      </section>
+
+      <section id="experiences" class="section section-soft reveal">
+        <div class="container">
+          <h2>Doświadczenia, które budują wspomnienia</h2>
+          <div class="cards three">
+            <article class="tile lift">
+              <h3>Prywatne rejsy o zachodzie</h3>
+              <p>Limitowane trasy na kameralnych jachtach z autorskim menu i sommelierem.</p>
+            </article>
+            <article class="tile lift">
+              <h3>Kultura od kulis</h3>
+              <p>Zwiedzanie z lokalnymi ekspertami, wejścia po godzinach i ekskluzywne spotkania.</p>
+            </article>
+            <article class="tile lift">
+              <h3>Wellness & reset</h3>
+              <p>Strefy spa premium, sesje oddechowe i plan regeneracji dopasowany do Ciebie.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="opinie" class="section reveal">
+        <div class="container split">
+          <div>
+            <h2>Opinie klientów premium</h2>
+            <blockquote class="quote-box" id="quoteBox">
+              „To nie był wyjazd, to było doświadczenie luksusu. Każdy detal dopracowany perfekcyjnie.”
+              <cite>— Karolina, Teide Signature</cite>
+            </blockquote>
+            <div class="quote-controls">
+              <button class="btn btn-ghost quote-btn" data-quote="0">1</button>
+              <button class="btn btn-ghost quote-btn" data-quote="1">2</button>
+              <button class="btn btn-ghost quote-btn" data-quote="2">3</button>
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <p><strong>4.9/5</strong> średnia ocen klientów VIP</p>
+            <p><strong>97%</strong> powracających rezerwacji</p>
+            <p><strong>48h</strong> maksymalny czas przygotowania oferty szytej na miarę</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt" class="section reveal">
+        <div class="container contact-box">
+          <div>
+            <h2>Zarezerwuj swoją podróż premium</h2>
+            <p>
+              Wypełnij formularz i odbierz wstępną propozycję podróży w 24h. W pierwszej rozmowie
+              dopracujemy styl wyjazdu, budżet i poziom ekskluzywności.
+            </p>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <label>
+              Imię i nazwisko
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              E-mail
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Interesujący pakiet
+              <select name="package" id="packageInput" required>
+                <option value="South Escape">South Escape</option>
+                <option value="Teide Signature">Teide Signature</option>
+                <option value="VIP Yacht">VIP Yacht</option>
+              </select>
+            </label>
+            <label>
+              Kiedy chcesz podróżować?
+              <input type="month" name="month" required />
+            </label>
+            <button class="btn btn-primary" type="submit">Wyślij zapytanie VIP</button>
+            <p class="form-note" id="formNote" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <a href="#kontakt" class="sticky-cta">Rezerwuj teraz</a>
+
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <p>© 2026 Banana Trails Elite. Wszelkie prawa zastrzeżone.</p>
+        <p>elite@bananatrails.pl · +48 555 101 202</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
